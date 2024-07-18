@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#cta {
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ficon:hover{
+    filter: brightness(89%) invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg) contrast(85%);
+}
+
+.hamburger{
+    cursos:pointer;
+    width:24px;
+    height:30px;
+    transition: all 0.25s;
+    position:relative;
+  }
+  
+  .hamburger-top,.hamburger-middle,.hamburger-bottom{
+  
+  position:absolute;
+  width:24px;
+  height:3px;
+  top:0;
+  left:0;
+  background:gray;
+  transform:rotate(0);
+  transition: all 0.5s;
+  }
+  
+  .hamburger-middle{
+    transform:translateY(7px);
+  }
+  
+  .hamburger-bottom{
+    transform:translateY(14px);
+  }
+  
+  
+  .open{
+    transform: rotate(90deg)
+  }
+  
+  
+  .open .hamburger-top{
+    transform:rotate(45deg) translateY(6px) translateX(6px);
+  }
+  
+  .open .hamburger-middle{
+    display:none
+  }
+  
+  .open .hamburger-bottom{
+    transform:rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+
